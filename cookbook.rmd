@@ -1,0 +1,103 @@
+# Cookbook
+
+This codebook was generated on 
+```{r echo=FALSE}
+Sys.Date()
+```
+
+
+## Variable list and descriptions
+
+Variable Name | Description|
+------------- | ------------|
+subject | ID the subject who performed the activity for each window sample. Its range is from 1 to 30.|
+activity | Activity Name|
+MEAN - tBodyAcc-X | Mean of tBodyAcc-X|
+MEAN - tBodyAcc-Y | Mean of tBodyAcc-Y
+MEAN - tBodyAcc-Z | Mean of tBodyAcc-Z
+STD - tBodyAcc-X  | Standard Deviation of tBodyAcc-X
+STD - tBodyAcc-Y  | Standard Deviation of tBodyAcc-Y
+STD - tBodyAcc-Z  | Standard Deviation of tBodyAcc-Z
+
+### Additional Variables
+
+
+MEAN - tGravityAcc-X
+MEAN - tGravityAcc-Y
+MEAN - tGravityAcc-Z
+STD - tGravityAcc-X        
+STD - tGravityAcc-Y
+STD - tGravityAcc-Z
+MEAN - tBodyAccJerk-X      
+MEAN - tBodyAccJerk-Y
+MEAN - tBodyAccJerk-Z       
+STD - tBodyAccJerk-X       
+STD - tBodyAccJerk-Y        
+STD - tBodyAccJerk-Z        
+MEAN - tBodyGyro-X
+MEAN - tBodyGyro-Y          
+MEAN - tBodyGyro-Z          
+STD - tBodyGyro-X          
+STD - tBodyGyro-Y           
+STD - tBodyGyro-Z           
+MEAN - tBodyGyroJerk-X     
+MEAN - tBodyGyroJerk-Y      
+MEAN - tBodyGyroJerk-Z      
+STD - tBodyGyroJerk-X      
+STD - tBodyGyroJerk-Y       
+STD - tBodyGyroJerk-Z       
+MEAN - tBodyAccMag         
+STD - tBodyAccMag           
+MEAN - tGravityAccMag       
+STD - tGravityAccMag       
+MEAN - tBodyAccJerkMag      
+STD - tBodyAccJerkMag       
+MEAN - tBodyGyroMag        
+STD - tBodyGyroMag          
+MEAN - tBodyGyroJerkMag     
+STD - tBodyGyroJerkMag     
+MEAN - fBodyAcc-X           
+MEAN - fBodyAcc-Y           
+MEAN - fBodyAcc-Z          
+STD - fBodyAcc-X            
+STD - fBodyAcc-Y            
+STD - fBodyAcc-Z
+MEAN - fBodyAccJerk-X       
+MEAN - fBodyAccJerk-Y       
+MEAN - fBodyAccJerk-Z      
+STD - fBodyAccJerk-X        
+STD - fBodyAccJerk-Y        
+STD - fBodyAccJerk-Z       
+MEAN - fBodyGyro-X          
+MEAN - fBodyGyro-Y          
+MEAN - fBodyGyro-Z         
+STD - fBodyGyro-X           
+STD - fBodyGyro-Y           
+STD - fBodyGyro-Z          
+MEAN - fBodyAccMag          
+STD - fBodyAccMag           
+MEAN - fBodyBodyAccJerkMag 
+STD - fBodyBodyAccJerkMag   
+MEAN - fBodyBodyGyroMag     
+STD - fBodyBodyGyroMag
+
+
+
+## Show a few rows of the dataset
+
+
+```{r echo=TRUE}
+source("run_analysis.R")
+head(run_analysis())
+```
+
+## Save to file
+
+Save data table objects to a tab-delimited text file called Result.txt
+
+#### Additional Information
+
+```{r echo = TRUE}
+Sys.Date()
+sessionInfo()
+```
